@@ -10,10 +10,10 @@
 		CD198A9C27A87AB4004DD728 /* Challenge_M2YApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD198A9B27A87AB4004DD728 /* Challenge_M2YApp.swift */; };
 		CD198A9E27A87AB4004DD728 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD198A9D27A87AB4004DD728 /* ContentView.swift */; };
 		CD198AA027A87AB6004DD728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD198A9F27A87AB6004DD728 /* Assets.xcassets */; };
-		CD198AA327A87AB6004DD728 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD198AA227A87AB6004DD728 /* Preview Assets.xcassets */; };
 		CD198AAD27A87AB6004DD728 /* Challenge_M2YTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD198AAC27A87AB6004DD728 /* Challenge_M2YTests.swift */; };
 		CD198AB727A87AB6004DD728 /* Challenge_M2YUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD198AB627A87AB6004DD728 /* Challenge_M2YUITests.swift */; };
 		CD198AB927A87AB7004DD728 /* Challenge_M2YUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD198AB827A87AB7004DD728 /* Challenge_M2YUITestsLaunchTests.swift */; };
+		CD198ADA27A885D4004DD728 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD198AD927A885D4004DD728 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +38,12 @@
 		CD198A9B27A87AB4004DD728 /* Challenge_M2YApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge_M2YApp.swift; sourceTree = "<group>"; };
 		CD198A9D27A87AB4004DD728 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD198A9F27A87AB6004DD728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CD198AA227A87AB6004DD728 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD198AA827A87AB6004DD728 /* Challenge-M2YTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Challenge-M2YTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD198AAC27A87AB6004DD728 /* Challenge_M2YTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge_M2YTests.swift; sourceTree = "<group>"; };
 		CD198AB227A87AB6004DD728 /* Challenge-M2YUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Challenge-M2YUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD198AB627A87AB6004DD728 /* Challenge_M2YUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge_M2YUITests.swift; sourceTree = "<group>"; };
 		CD198AB827A87AB7004DD728 /* Challenge_M2YUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge_M2YUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD198AD927A885D4004DD728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,20 +94,14 @@
 		CD198A9A27A87AB4004DD728 /* Challenge-M2Y */ = {
 			isa = PBXGroup;
 			children = (
+				CD198AD427A8848E004DD728 /* Resoruces */,
+				CD198AD627A884B8004DD728 /* Model */,
+				CD198AD727A884C2004DD728 /* ViewModel */,
+				CD198AD827A884D7004DD728 /* View */,
+				CD198AD927A885D4004DD728 /* Info.plist */,
 				CD198A9B27A87AB4004DD728 /* Challenge_M2YApp.swift */,
-				CD198A9D27A87AB4004DD728 /* ContentView.swift */,
-				CD198A9F27A87AB6004DD728 /* Assets.xcassets */,
-				CD198AA127A87AB6004DD728 /* Preview Content */,
 			);
 			path = "Challenge-M2Y";
-			sourceTree = "<group>";
-		};
-		CD198AA127A87AB6004DD728 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				CD198AA227A87AB6004DD728 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		CD198AAB27A87AB6004DD728 /* Challenge-M2YTests */ = {
@@ -125,6 +119,44 @@
 				CD198AB827A87AB7004DD728 /* Challenge_M2YUITestsLaunchTests.swift */,
 			);
 			path = "Challenge-M2YUITests";
+			sourceTree = "<group>";
+		};
+		CD198AD427A8848E004DD728 /* Resoruces */ = {
+			isa = PBXGroup;
+			children = (
+				CD198AD527A8849A004DD728 /* Extensions */,
+				CD198A9F27A87AB6004DD728 /* Assets.xcassets */,
+			);
+			path = Resoruces;
+			sourceTree = "<group>";
+		};
+		CD198AD527A8849A004DD728 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD198AD627A884B8004DD728 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD198AD727A884C2004DD728 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD198AD827A884D7004DD728 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD198A9D27A87AB4004DD728 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD198AA327A87AB6004DD728 /* Preview Assets.xcassets in Resources */,
+				CD198ADA27A885D4004DD728 /* Info.plist in Resources */,
 				CD198AA027A87AB6004DD728 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
