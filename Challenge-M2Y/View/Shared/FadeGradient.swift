@@ -15,9 +15,3 @@ struct FadeGradient: View {
             .opacity(0.90)
     }
 }
-
-struct FadeGradient_Previews: PreviewProvider {
-    static var previews: some View {
-        FadeGradient()
-    }
-}

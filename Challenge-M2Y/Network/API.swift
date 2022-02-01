@@ -13,16 +13,16 @@ class API{
     func getObject<T: Decodable>(url: String, completion: @escaping (Result<T, Error>) -> Void){
         guard let url = URL(string: url )else{return}
         
-        URLSession.shared.dataTask(with: url) {data, _, _ in
-            guard let data = data else {return completion(.failure(ApiError.dataError))}
+            URLSession.shared.dataTask(with: url) {data, _, _ in
+                guard let data = data else {return completion(.failure(ApiError.dataError))}
 
-            let result = try? JSONDecoder().decode(T.self, from: data)
-            
-            guard let result = result else {return completion(.failure(ApiError.parserError))}
-            
-            completion(.success(result))
-            
-        }.resume()
+                let result = try? JSONDecoder().decode(T.self, from: data)
+                
+                guard let result = result else {return completion(.failure(ApiError.parserError))}
+                
+                completion(.success(result))
+                
+            }.resume()
     }
 }
 

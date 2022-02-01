@@ -17,24 +17,39 @@ struct HomeViewMovieDetails: View {
     
     var body: some View {
         
-        
-        ScrollView (showsIndicators: false){
-            //MARK: Top movie
-            TopMovieView(posterPath: viewModel.movie?.poster_path ?? "")
+        ZStack{
+            ScrollView (showsIndicators: false){
+                //Top movie Image
+                TopMovieImage(posterPath: viewModel.movie?.poster_path ?? "")
+                
+                
+                
+                //Movie infos
+                MovieInfoView(voteCount: viewModel.movie?.vote_count ?? 0, popularity: viewModel.movie?.popularity ?? 0.0, title: viewModel.movie?.original_title ?? "without title")
+                    .padding(.leading, 5)
+                
+                //Similar list
+                ForEach(viewModel.similarMovies ?? []) {movie in
+                    ListView(title: movie.title, year: String(movie.release_date.prefix(4)), posterPath: movie.poster_path ?? "", genres: viewModel.getFormattedGenres(ids: movie.genre_ids))
+                    Divider()
+                        .foregroundColor(.gray)
+                        .opacity(0.5)
+                }
+                .foregroundColor(.primary)
+                
+            }
+            .edgesIgnoringSafeArea(.top)
             
-            //MARK: Movie infos
-            MovieInfoView(voteCount: viewModel.movie?.vote_count ?? 0, popularity: viewModel.movie?.popularity ?? 0.0, title: viewModel.movie?.original_title ?? "without title")
-                .padding(.leading, 5)
-            //TODO: implements navigationLink and similar movies
-            
-        }
-    }
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            HomeViewMovieDetails(withId: 515195)
-                .preferredColorScheme(.dark)
         }
     }
     
 }
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeViewMovieDetails(withId: 515195)
+            .preferredColorScheme(.dark)
+    }
+}
+
+
