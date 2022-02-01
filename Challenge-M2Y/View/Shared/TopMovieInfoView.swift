@@ -17,22 +17,17 @@ struct MovieInfoView: View {
     var body: some View {
         VStack(spacing: 15){
             HStack {
-                //MARK: Title of first movie
+                //Title of first movie
                 Text(title)
                     .font(.system(size: 30, weight: .bold, design: .rounded))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .lineLimit(3)
                 
-                //MARK: Heart Button
-                Button {
-                    isFavMovie.toggle()
-                } label: {
-                    Image(systemName: isFavMovie ? "suit.heart.fill" : "suit.heart")
-                        .foregroundColor(.primary)
-                }
+                //Heart Button
+                ButtonLike()
                 .padding(.trailing)
             }
-            //MARK: Movie Likes and Views
+            //Movie first infos
             HStack {
                 Image(systemName: "suit.heart.fill")
 
@@ -50,8 +45,3 @@ struct MovieInfoView: View {
     }
 }
 
-struct MovieInfoView_Previews: PreviewProvider {
-    static var previews: some View {
-        MovieInfoView(voteCount: 2368, popularity: 50.299, title: "Porco Rosso o Último Herói Romântico")
-    }
-}

@@ -16,7 +16,7 @@ struct ListView: View {
     
     var body: some View {
         HStack{
-            //MARK: Movie Image
+            //Movie Image
             AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/original\(self.posterPath)")){
                 imageMovie in
                 imageMovie
@@ -24,7 +24,7 @@ struct ListView: View {
                 .frame(width: 50)
             }placeholder: {
                 ZStack {
-                    //MARK: Placeholder
+                    //Placeholder
                     Rectangle()
                         .foregroundColor(.black)
                         .frame(width: 60)
@@ -32,7 +32,7 @@ struct ListView: View {
                          .progressViewStyle(.circular)
                 }
             }
-            //MARK: Basics infos
+            //Basics infos
             VStack(alignment: .leading){
                 Text(title)
                     .bold()
@@ -52,8 +52,3 @@ struct ListView: View {
     }
 }
 
-struct ListView_Previews: PreviewProvider {
-    static var previews: some View {
-        ListView(title: "Eternos", year: "2013", posterPath: "/4idevlMxCtcHSwkyZnW4qJaJNwP.jpg", genres: "Ficção científica")
-    }
-}
