@@ -8,16 +8,11 @@
 import SwiftUI
 
 struct Movie: Decodable{
+    var genres: [Genres]
     var release_date: String
     var vote_count: Int // ammount of likes
     var poster_path: String // poster image
     var backdrop_path: String // image
-    var genres: [Genres]
     var popularity: Double
     var original_title: String
-}
-
-struct Genres: Decodable{
-    var name: String
-    var id: Int
 }
