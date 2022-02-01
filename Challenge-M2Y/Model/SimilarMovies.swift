@@ -8,9 +8,9 @@
 import Foundation
 
 struct SimilarMovie: Decodable{
-    var genres_ids: [Int]
+    var genre_ids: [Int]
     var release_date: String
-    var poster_path: String // poster image
+    var poster_path: String? // poster image
     var title: String
 }
 

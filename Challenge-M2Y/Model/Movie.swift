@@ -11,8 +11,8 @@ struct Movie: Decodable{
     var genres: [Genres]
     var release_date: String
     var vote_count: Int // ammount of likes
-    var poster_path: String // poster image
-    var backdrop_path: String // image
+    var poster_path: String? // poster image
+    var backdrop_path: String? // image
     var popularity: Double
     var original_title: String
 }

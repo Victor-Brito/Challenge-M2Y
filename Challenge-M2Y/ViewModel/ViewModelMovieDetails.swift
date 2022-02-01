@@ -22,16 +22,27 @@ class ViewModelMovieDetails: ObservableObject {
 
     private func getMovie(id: Int) {
         let urlGetMovie = "https://api.themoviedb.org/3/movie/\(id)?api_key=e331ec9230dc9f7a0edeb496b1a3a230"
-        API().getObject(url: urlGetMovie) { (result: Movie) in
-            self.movie = result
+        API().getObject(url: urlGetMovie) { (result: Result<Movie, Error>) in
+            switch result{
+            case .success(let movie):
+                self.movie = movie
+            case .failure:
+                self.movie = nil
+            }
         }
 
     }
 
     private func getSimilarMovies(id: Int) {
         let urlGetSimilarMovie = "https://api.themoviedb.org/3/movie/\(id)/similar?api_key=e331ec9230dc9f7a0edeb496b1a3a230"
-        API().getObject(url: urlGetSimilarMovie) { (list: ListSimilarMovies) in
-            self.similarMovies = list.results
+        API().getObject(url: urlGetSimilarMovie) { (list: Result<ListSimilarMovies, Error>) in
+            switch list{
+            case .success(let movie):
+                self.similarMovies = movie.results
+            case .failure:
+                self.movie = nil
+            }
+            
         }
         
 
@@ -39,10 +50,16 @@ class ViewModelMovieDetails: ObservableObject {
 
     private func getGenres() {
         let urlGenres = "https://api.themoviedb.org/3/genre/movie/list?api_key=e331ec9230dc9f7a0edeb496b1a3a230&language=en-US"
-        API().getObject(url: urlGenres) { (list: ListGenres) in
-            list.genres.forEach { genre in
-                self.allGenres[genre.id] = genre.name
+        API().getObject(url: urlGenres) { (result: Result<ListGenres, Error>) in
+            switch result{
+            case .success(let list):
+                list.genres.forEach { genre in
+                    self.allGenres[genre.id] = genre.name
+                }
+            case .failure:
+                self.allGenres = [:]
             }
+            
         }
 
     }
