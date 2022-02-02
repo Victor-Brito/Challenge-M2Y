@@ -16,10 +16,11 @@ struct TopMovieImage: View {
             ZStack {
                 AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/original\(posterPath)")){
                     topImage in
-                
+
                 if geometry.frame(in: .global).minY <= 0 {
                     //TOPIMAGE
                     topImage
+                        .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: geometry.size.width, height: geometry.size.height)
                         .offset(y: geometry.frame(in: .global).minY/9)
@@ -27,11 +28,12 @@ struct TopMovieImage: View {
                 } else {
                     //TOPIMAGE
                     topImage
+                        .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: geometry.size.width, height: geometry.size.height + geometry.frame(in: .global).minY)
                         .clipped()
                         .offset(y: -geometry.frame(in: .global).minY)
-            
+
                 }
                 } placeholder: {
                     Spacer()
@@ -42,6 +44,7 @@ struct TopMovieImage: View {
                 FadeGradient()
             }
         }
+        
         .frame(height: 350)
     }
 }
