@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ButtonLike: View {
+struct TopButtonLike: View {
     
     @State var isFavMovie = false
 

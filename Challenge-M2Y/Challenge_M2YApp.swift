@@ -11,7 +11,7 @@ import SwiftUI
 struct Challenge_M2YApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeViewMovieDetails(withId: 634649)
+            HomeViewMovieDetails()
                 .preferredColorScheme(.dark)
         }
     }
