@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MovieInfoView: View {
+struct TopMovieInfoView: View {
     
     @State var isFavMovie = false
     var voteCount: Int
@@ -24,7 +24,7 @@ struct MovieInfoView: View {
                     .lineLimit(3)
                 
                 //Heart Button
-                ButtonLike()
+                TopButtonLike()
                 .padding(.trailing)
             }
             //Movie first infos

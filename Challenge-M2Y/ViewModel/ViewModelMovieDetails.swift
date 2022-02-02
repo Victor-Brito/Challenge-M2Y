@@ -10,8 +10,9 @@ import SwiftUI
 
 class ViewModelMovieDetails: ObservableObject {
 
-    @Published var movie: Movie?
+   
     @Published var similarMovies: [SimilarMovie]?
+    @Published var movie: Movie?
     private var allGenres: [Int: String] = [:]
 
     init(withId id: Int) {

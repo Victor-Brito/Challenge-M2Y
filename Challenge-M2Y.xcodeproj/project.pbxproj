@@ -24,6 +24,9 @@
 		CD403F8627A9529B00F8187C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD403F8527A9529B00F8187C /* ListView.swift */; };
 		CD50709427A9AF45005A0B74 /* TopButtonLike.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD50709327A9AF45005A0B74 /* TopButtonLike.swift */; };
 		CD50709A27A9B3B6005A0B74 /* TopMovieImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD50709927A9B3B6005A0B74 /* TopMovieImage.swift */; };
+		CD5070A027AABE4D005A0B74 /* MovieInfosComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD50709F27AABE4D005A0B74 /* MovieInfosComponent.swift */; };
+		CD5070A227AAC160005A0B74 /* ListViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5070A127AAC160005A0B74 /* ListViewComponent.swift */; };
+		CD5070A427AAC3C4005A0B74 /* ImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5070A327AAC3C4005A0B74 /* ImageComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		CD403F8527A9529B00F8187C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		CD50709327A9AF45005A0B74 /* TopButtonLike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopButtonLike.swift; sourceTree = "<group>"; };
 		CD50709927A9B3B6005A0B74 /* TopMovieImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMovieImage.swift; sourceTree = "<group>"; };
+		CD50709F27AABE4D005A0B74 /* MovieInfosComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfosComponent.swift; sourceTree = "<group>"; };
+		CD5070A127AAC160005A0B74 /* ListViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewComponent.swift; sourceTree = "<group>"; };
+		CD5070A327AAC3C4005A0B74 /* ImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,9 +205,12 @@
 			isa = PBXGroup;
 			children = (
 				CD50709927A9B3B6005A0B74 /* TopMovieImage.swift */,
+				CD5070A327AAC3C4005A0B74 /* ImageComponent.swift */,
 				CD403F8327A9528300F8187C /* TopMovieInfoView.swift */,
-				CD50709327A9AF45005A0B74 /* TopButtonLike.swift */,
+				CD50709F27AABE4D005A0B74 /* MovieInfosComponent.swift */,
 				CD403F8527A9529B00F8187C /* ListView.swift */,
+				CD5070A127AAC160005A0B74 /* ListViewComponent.swift */,
+				CD50709327A9AF45005A0B74 /* TopButtonLike.swift */,
 				CD0E1A0F27A97D8F00304B63 /* FadeGradient.swift */,
 			);
 			path = Shared;
@@ -344,9 +353,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5070A027AABE4D005A0B74 /* MovieInfosComponent.swift in Sources */,
 				CD403F7927A8A7B700F8187C /* ViewModelMovieDetails.swift in Sources */,
 				CD198A9E27A87AB4004DD728 /* HomeViewMovieDetails.swift in Sources */,
+				CD5070A227AAC160005A0B74 /* ListViewComponent.swift in Sources */,
 				CD403F8627A9529B00F8187C /* ListView.swift in Sources */,
+				CD5070A427AAC3C4005A0B74 /* ImageComponent.swift in Sources */,
 				CD50709427A9AF45005A0B74 /* TopButtonLike.swift in Sources */,
 				CD403F7C27A8B78F00F8187C /* Genres.swift in Sources */,
 				CD403F7E27A8B9B200F8187C /* SimilarMovie.swift in Sources */,
