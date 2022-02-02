@@ -12,4 +12,5 @@ Replica of TMDB movies layout (TodoMovies 4)
 + Xcode 13.2.1
 + Swift 5.5
 + SwiftUI
-#Thanks for the challenge :)
+
+#  Thanks for the challenge :)
