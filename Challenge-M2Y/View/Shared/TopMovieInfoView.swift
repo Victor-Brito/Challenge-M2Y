@@ -45,3 +45,10 @@ struct TopMovieInfoView: View {
     }
 }
 
+struct TopMovieInfoView_Previews: PreviewProvider {
+    static var previews: some View {
+        TopMovieInfoView(voteCount: 3456, popularity: 345223, title: "Teste")
+            
+    }
+}
+

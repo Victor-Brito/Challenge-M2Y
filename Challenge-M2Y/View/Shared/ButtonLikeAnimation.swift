@@ -1,19 +1,19 @@
 //
-//  ButtonLike.swift
+//  ButtonLikeAnimation.swift
 //  Challenge-M2Y
 //
-//  Created by Victor Brito on 01/02/22.
+//  Created by Victor Brito on 02/02/22.
 //
 
 import SwiftUI
 
-struct TopButtonLike: View {
+struct ButtonLikeAnimation: View {
     
-    @State var isFavMovie = false
+    @Binding var isLiked: Bool
     
     private let animationDuration: Double = 0.1
     private var animationScale: CGFloat {
-        isFavMovie ? 0.7 : 1.3
+        isLiked ? 0.7 : 1.3
     }
     
     @State private var animate = false
@@ -24,26 +24,17 @@ struct TopButtonLike: View {
             
             DispatchQueue.main.asyncAfter(deadline: .now() + self.animationDuration, execute: {
                 self.animate = false
-                self.isFavMovie.toggle()
-            })
+                self.isLiked.toggle()
+        })
         }, label: {
-            Image(systemName: isFavMovie ? "suit.heart.fill" : "suit.heart")
+            Image(systemName: isLiked ? "heart.fill" : "heart")
                 .resizable()
-                .frame(width: 22, height: 22)
-                .foregroundColor(.primary)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100)
+                .foregroundColor(isLiked ? .white : .gray)
         })
             .scaleEffect(animate ? animationScale : 1)
             .animation(.easeIn(duration: animationDuration))
-        
     }
 }
-
-
-
-
-
-
-
-
-
 
