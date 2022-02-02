@@ -28,6 +28,7 @@ struct HomeViewMovieDetails: View {
                 MovieInfoView(voteCount: viewModel.movie?.vote_count ?? 0, popularity: viewModel.movie?.popularity ?? 0.0, title: viewModel.movie?.original_title ?? "without title")
                     .padding(.leading, 5)
                 
+                
                 //Similar list
                 ForEach(viewModel.similarMovies ?? []) {movie in
                     ListView(title: movie.title, year: String(movie.release_date.prefix(4)), posterPath: movie.poster_path ?? "", genres: viewModel.getFormattedGenres(ids: movie.genre_ids))

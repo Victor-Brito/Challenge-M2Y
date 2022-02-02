@@ -10,15 +10,19 @@ import SwiftUI
 struct ButtonLike: View {
     
     @State var isFavMovie = false
+
     
     var body: some View {
         Button {
             isFavMovie.toggle()
         } label: {
             Image(systemName: isFavMovie ? "suit.heart.fill" : "suit.heart")
+                .resizable()
+                .frame(width: 22, height: 22)
                 .foregroundColor(.primary)
-        }
+            }  
     }
 }
+
 
 
