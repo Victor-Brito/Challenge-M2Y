@@ -12,9 +12,6 @@
 		CD198A9C27A87AB4004DD728 /* Challenge_M2YApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD198A9B27A87AB4004DD728 /* Challenge_M2YApp.swift */; };
 		CD198A9E27A87AB4004DD728 /* HomeViewMovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD198A9D27A87AB4004DD728 /* HomeViewMovieDetails.swift */; };
 		CD198AA027A87AB6004DD728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD198A9F27A87AB6004DD728 /* Assets.xcassets */; };
-		CD198AAD27A87AB6004DD728 /* Challenge_M2YTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD198AAC27A87AB6004DD728 /* Challenge_M2YTests.swift */; };
-		CD198AB727A87AB6004DD728 /* Challenge_M2YUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD198AB627A87AB6004DD728 /* Challenge_M2YUITests.swift */; };
-		CD198AB927A87AB7004DD728 /* Challenge_M2YUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD198AB827A87AB7004DD728 /* Challenge_M2YUITestsLaunchTests.swift */; };
 		CD198ADD27A889EE004DD728 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD198ADC27A889EE004DD728 /* API.swift */; };
 		CD198ADF27A88F30004DD728 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD198ADE27A88F30004DD728 /* Movie.swift */; };
 		CD403F7927A8A7B700F8187C /* ViewModelMovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD403F7827A8A7B700F8187C /* ViewModelMovieDetails.swift */; };
@@ -54,10 +51,7 @@
 		CD198A9D27A87AB4004DD728 /* HomeViewMovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewMovieDetails.swift; sourceTree = "<group>"; };
 		CD198A9F27A87AB6004DD728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD198AA827A87AB6004DD728 /* Challenge-M2YTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Challenge-M2YTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD198AAC27A87AB6004DD728 /* Challenge_M2YTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge_M2YTests.swift; sourceTree = "<group>"; };
 		CD198AB227A87AB6004DD728 /* Challenge-M2YUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Challenge-M2YUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD198AB627A87AB6004DD728 /* Challenge_M2YUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge_M2YUITests.swift; sourceTree = "<group>"; };
-		CD198AB827A87AB7004DD728 /* Challenge_M2YUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge_M2YUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CD198AD927A885D4004DD728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD198ADC27A889EE004DD728 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		CD198ADE27A88F30004DD728 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -110,8 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				CD198A9A27A87AB4004DD728 /* Challenge-M2Y */,
-				CD198AAB27A87AB6004DD728 /* Challenge-M2YTests */,
-				CD198AB527A87AB6004DD728 /* Challenge-M2YUITests */,
 				CD198A9927A87AB4004DD728 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -139,23 +131,6 @@
 				CD198A9B27A87AB4004DD728 /* Challenge_M2YApp.swift */,
 			);
 			path = "Challenge-M2Y";
-			sourceTree = "<group>";
-		};
-		CD198AAB27A87AB6004DD728 /* Challenge-M2YTests */ = {
-			isa = PBXGroup;
-			children = (
-				CD198AAC27A87AB6004DD728 /* Challenge_M2YTests.swift */,
-			);
-			path = "Challenge-M2YTests";
-			sourceTree = "<group>";
-		};
-		CD198AB527A87AB6004DD728 /* Challenge-M2YUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CD198AB627A87AB6004DD728 /* Challenge_M2YUITests.swift */,
-				CD198AB827A87AB7004DD728 /* Challenge_M2YUITestsLaunchTests.swift */,
-			);
-			path = "Challenge-M2YUITests";
 			sourceTree = "<group>";
 		};
 		CD198AD427A8848E004DD728 /* Resoruces */ = {
@@ -188,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				CD198A9D27A87AB4004DD728 /* HomeViewMovieDetails.swift */,
-				CD198AE227A89BC7004DD728 /* Shared */,
+				CD198AE227A89BC7004DD728 /* Component  */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,7 +176,7 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		CD198AE227A89BC7004DD728 /* Shared */ = {
+		CD198AE227A89BC7004DD728 /* Component  */ = {
 			isa = PBXGroup;
 			children = (
 				CD50709927A9B3B6005A0B74 /* TopMovieImage.swift */,
@@ -213,7 +188,7 @@
 				CD50709327A9AF45005A0B74 /* TopButtonLike.swift */,
 				CD0E1A0F27A97D8F00304B63 /* FadeGradient.swift */,
 			);
-			path = Shared;
+			path = "Component ";
 			sourceTree = "<group>";
 		};
 		CD403F7A27A8B69000F8187C /* Utils */ = {
@@ -376,7 +351,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD198AAD27A87AB6004DD728 /* Challenge_M2YTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,8 +358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD198AB727A87AB6004DD728 /* Challenge_M2YUITests.swift in Sources */,
-				CD198AB927A87AB7004DD728 /* Challenge_M2YUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

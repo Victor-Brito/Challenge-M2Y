@@ -8,6 +8,7 @@
 import SwiftUI
 
 
+/// This function needs a generic type T that conforms to Decodable
 class API{
     
     func getObject<T: Decodable>(url: String, completion: @escaping (Result<T, Error>) -> Void){

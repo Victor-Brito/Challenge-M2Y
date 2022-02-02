@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TopMovieImage: View {
     
+    /// poster path is the variable that makes an interpolation of strings, where it makes the call of the string that assigns the image of the main "movie"
     var posterPath: String
     
     var body: some View {

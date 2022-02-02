@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Here is where all the data is presented on the device screen, I tried to leave the elements componentized, just calling the id of the movie
 struct HomeViewMovieDetails: View {
     
     
@@ -25,7 +26,6 @@ struct HomeViewMovieDetails: View {
                     .foregroundColor(.primary)
             }
             .edgesIgnoringSafeArea(.top)
-            
         }
     }
 }

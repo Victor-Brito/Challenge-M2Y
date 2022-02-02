@@ -33,8 +33,7 @@ struct TopButtonLike: View {
                 .foregroundColor(.primary)
         })
             .scaleEffect(animate ? animationScale : 1)
-            .animation(.easeIn(duration: animationDuration))
-        
+            .animation(.easeIn(duration: animationDuration), value: animationScale)
     }
 }
 

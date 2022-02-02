@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Component responsible for showing the similar movies based of main movie in the "view
 struct ListViewComponent: View {
     
     @ObservedObject var viewModel: ViewModelMovieDetails

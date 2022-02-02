@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Component responsible for showing the main movie infos in the "view" 
 struct MovieInfosComponent: View {
     
     @ObservedObject var viewModel: ViewModelMovieDetails

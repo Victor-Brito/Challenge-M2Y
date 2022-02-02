@@ -17,8 +17,6 @@ struct SimilarMovie: Decodable, Identifiable{
 }
 
 struct ListSimilarMovies: Decodable{
-
-    
     var results: [SimilarMovie]
 }
 
