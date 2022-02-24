@@ -20,6 +20,7 @@ struct HomeViewMovieDetails: View {
                 
                 //Movie infos
                 MovieInfosComponent(withId: 634649)
+                //fgfgfgfg
                 
                 //Similar list
                 ListViewComponent(withId: 634649)
